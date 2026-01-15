@@ -1,0 +1,300 @@
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Partners Section */
+.partners-section-pycon {
+  position: relative;
+  background: #ffffff;
+  padding: 6rem 5% 8rem;
+  overflow: hidden;
+}
+
+.partners-section-pycon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(13, 104, 56, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(13, 104, 56, 0.03) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.partners-container-pycon {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Header */
+.partners-header-pycon {
+  text-align: center;
+  margin-bottom: 4rem;
+  animation: partners-fade-in-up-pycon 0.8s ease-out;
+}
+
+.partners-badge-pycon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(13, 104, 56, 0.1);
+  color: #0d6838;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(13, 104, 56, 0.2);
+}
+
+.partners-badge-pycon svg {
+  color: #0d6838;
+}
+
+.partners-title-pycon {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #1f2937;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.partners-title-highlight-pycon {
+  color: #0d6838;
+  position: relative;
+}
+
+.partners-title-highlight-pycon::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(13, 104, 56, 0.2), rgba(13, 104, 56, 0.1));
+  border-radius: 4px;
+  z-index: -1;
+}
+
+.partners-subtitle-pycon {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  color: #6b7280;
+  font-weight: 400;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Partners Grid */
+.partners-grid-pycon {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+/* Partner Card */
+.partner-card-pycon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  border: 2px solid #f3f4f6;
+  border-radius: 16px;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  animation: partners-fade-in-up-pycon 0.6s ease-out backwards;
+}
+
+/* Logo Wrapper */
+.partner-logo-wrapper-pycon {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f9fafb;
+  border-radius: 12px;
+}
+
+.partner-logo-pycon {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+}
+
+/* Partner Info */
+.partner-info-pycon {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.partner-name-pycon {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1f2937;
+  line-height: 1.4;
+}
+
+.partner-category-pycon {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  color: #0d6838;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Call to Action */
+.partners-cta-pycon {
+  animation: partners-fade-in-up-pycon 0.8s ease-out 0.2s backwards;
+}
+
+.partners-cta-content-pycon {
+  background: linear-gradient(135deg, #0d6838 0%, #1a8f4f 100%);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.partners-cta-content-pycon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml,<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" fill="none"/><circle cx="20" cy="20" r="1" fill="rgba(255,255,255,0.1)"/></svg>');
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.partners-cta-title-pycon {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.partners-cta-description-pycon {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+
+.partners-cta-btn-pycon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #ffffff;
+  color: #0d6838;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1;
+}
+
+.partners-cta-btn-pycon svg {
+  flex-shrink: 0;
+}
+
+/* Animations */
+@keyframes partners-fade-in-up-pycon {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .partners-section-pycon {
+    padding: 4rem 5% 5rem;
+  }
+
+  .partners-title-pycon {
+    font-size: 2rem;
+  }
+
+  .partners-subtitle-pycon {
+    font-size: 1rem;
+  }
+
+  .partners-grid-pycon {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .partner-card-pycon {
+    padding: 2rem 1.25rem;
+  }
+
+  .partner-logo-wrapper-pycon {
+    height: 100px;
+  }
+
+  .partners-cta-content-pycon {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .partners-cta-title-pycon {
+    font-size: 1.8rem;
+  }
+
+  .partners-cta-description-pycon {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .partners-title-pycon {
+    font-size: 1.75rem;
+  }
+
+  .partners-grid-pycon {
+    grid-template-columns: 1fr;
+  }
+
+  .partners-cta-title-pycon {
+    font-size: 1.6rem;
+  }
+
+  .partners-cta-btn-pycon {
+    padding: 0.9rem 2rem;
+    font-size: 0.95rem;
+  }
+}

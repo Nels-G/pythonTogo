@@ -1,0 +1,289 @@
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* News Section */
+.news-section-pycon {
+  position: relative;
+  background: linear-gradient(180deg, #f9fafb 0%, #ffffff 100%);
+  padding: 6rem 5% 8rem;
+  overflow: hidden;
+}
+
+.news-section-pycon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(13, 104, 56, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(13, 104, 56, 0.02) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.news-container-pycon {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Header */
+.news-header-pycon {
+  text-align: center;
+  margin-bottom: 4rem;
+  animation: news-fade-in-up-pycon 0.8s ease-out;
+}
+
+.news-badge-pycon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(13, 104, 56, 0.1);
+  color: #0d6838;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(13, 104, 56, 0.2);
+}
+
+.news-badge-pycon svg {
+  color: #0d6838;
+}
+
+.news-title-pycon {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.news-title-highlight-pycon {
+  color: #0d6838;
+  position: relative;
+}
+
+.news-title-highlight-pycon::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* height: 8px; */
+  background: linear-gradient(90deg, rgba(13, 104, 56, 0.2), rgba(13, 104, 56, 0.1));
+  border-radius: 4px;
+  z-index: -1;
+}
+
+.news-subtitle-pycon {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  color: #6b7280;
+  font-weight: 400;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* News Grid */
+.news-grid-pycon {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* News Card */
+.news-card-pycon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  animation: news-fade-in-up-pycon 0.6s ease-out backwards;
+}
+
+/* Image Wrapper */
+.news-image-wrapper-pycon {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background: #f3f4f6;
+}
+
+.news-image-pycon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Category Badge on Image */
+.news-category-pycon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(13, 104, 56, 0.95);
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  backdrop-filter: blur(10px);
+}
+
+/* Content */
+.news-content-pycon {
+  padding: 1.5rem;
+}
+
+.news-card-title-pycon {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1f2937;
+  line-height: 1.4;
+  margin-bottom: 0.8rem;
+}
+
+.news-card-description-pycon {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Card Footer */
+.news-card-footer-pycon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Date */
+.news-date-pycon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+.news-date-pycon svg {
+  color: #0d6838;
+  flex-shrink: 0;
+}
+
+/* Read More Link */
+.news-link-pycon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #0d6838;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Footer */
+.news-footer-pycon {
+  text-align: center;
+  animation: news-fade-in-up-pycon 0.8s ease-out 0.4s backwards;
+}
+
+.news-view-all-btn-pycon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: linear-gradient(135deg, #0d6838 0%, #1a8f4f 100%);
+  color: #ffffff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(13, 104, 56, 0.25);
+}
+
+.news-view-all-btn-pycon svg {
+  flex-shrink: 0;
+}
+
+/* Animations */
+@keyframes news-fade-in-up-pycon {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .news-section-pycon {
+    padding: 4rem 5% 5rem;
+  }
+
+  .news-title-pycon {
+    font-size: 2rem;
+  }
+
+  .news-subtitle-pycon {
+    font-size: 1rem;
+  }
+
+  .news-grid-pycon {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .news-image-wrapper-pycon {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .news-title-pycon {
+    font-size: 1.75rem;
+  }
+
+  .news-card-title-pycon {
+    font-size: 1.15rem;
+  }
+
+  .news-image-wrapper-pycon {
+    height: 180px;
+  }
+
+  .news-content-pycon {
+    padding: 1.25rem;
+  }
+
+  .news-card-footer-pycon {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+}
