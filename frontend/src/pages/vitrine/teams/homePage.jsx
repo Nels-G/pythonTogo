@@ -1,7 +1,7 @@
 import Hero from '../../../components/vitrine/hero/hero'
 import News from '../../../components/vitrine/news/news'
 import Partners from '../../../components/vitrine/partners/partners'
-import './HomePage.css'
+import './homePage.css'
 
 function HomePage() {
   return (
